@@ -1,0 +1,44 @@
+body {
+  color: red;
+}
+
+.title {
+  font-size: 6rem;
+}
+
+.subtitle {
+  font-size: 4rem;
+}
+
+/* 
+ * NB : - Seuls les attributs contenus dans la portée du @media seront affectés 
+ *      - Les possibilités des combinaisons sont illimitées
+*/
+
+/* all : tous les types de format d'écran */
+@media all and (max-width: 500px) {
+  body {
+    color: blue;
+  }
+}
+
+/* print : lors de l'impression */
+@media print {
+  body {
+    color: yellow;
+  }
+}
+
+/* landscape : orientation horizontale */
+@media (orientation: landscape) {
+  .title {
+    color: green;
+  }
+}
+
+/* landscape : orientation verticale */
+@media (orientation: portrait) {
+  .subtitle {
+    color: aqua;
+  }
+}
